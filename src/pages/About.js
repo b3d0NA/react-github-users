@@ -4,7 +4,9 @@ const About = () => {
   return (
     <section className="section about-section">
       <h1 className="section-title">About Us</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus iste cumque porro exercitationem, officiis dolore, quia reprehenderit nesciunt autem soluta obcaecati delectus hic numquam debitis, eveniet voluptatum repellendus quibusdam illum.</p>
+      <h2>Tariqul Islam Prottoy</h2>
+      <h5>Full Stack Web Developer</h5>
+      <p>Full Stack Web Developer here! I pass most of the time of my day by working with web. I like to work with web technology. I love this. Whenever I find anything new I try hard to learn that.</p>
     </section>
   )
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-const Cocktail = ({username, id, image, profile_url, type}) => {
+const User = ({username, id, image, profile_url, type}) => {
   return (
     <article className="cocktail">
       <div className="img-container">
@@ -17,4 +17,4 @@ const Cocktail = ({username, id, image, profile_url, type}) => {
   )
 }
 
-export default Cocktail
+export default User;

@@ -1,16 +1,16 @@
 import React from 'react'
-import Cocktail from './Cocktail'
+import User from './User'
 import Loading from './Loading'
 import { useGlobalContext } from '../context'
 
-const CocktailList = () => {
+const UserList = () => {
   const {loading, users, isSingle} = useGlobalContext()
   if(loading){
     return <Loading />
   }
   if(users === ""){
     return <h2 className="section-title">
-      no cocktails match your search criteria
+      no users matched your search criteria
     </h2>
   }
   if(isSingle){
@@ -18,7 +18,7 @@ const CocktailList = () => {
       <section className="section">
         <h2 className="section-title">Github Users</h2>
         <div className="cocktails-center">
-          <Cocktail key={users.id} {...users} />
+          <User key={users.id} {...users} />
         </div>
       </section>
     </>)
@@ -28,11 +28,11 @@ const CocktailList = () => {
       <h2 className="section-title">Github Users</h2>
       <div className="cocktails-center">
         {users.map((user) => {
-          return <Cocktail key={user.id} {...user} />
+          return <User key={user.id} {...user} />
         })}
       </div>
     </section>
   </>)
 }
 
-export default CocktailList
+export default UserList
